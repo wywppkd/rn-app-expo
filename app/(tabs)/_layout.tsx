@@ -52,12 +52,15 @@ export default function TabLayout() {
       <Tabs.Screen
         name="add"
         options={{
-          title: "",
+          title: "Add",
           tabBarIcon: ({ color }) => (
             <View className="-mt-4 text-3xl text-center bg-green-500 w-14 h-10 rounded-lg flex justify-center items-center">
               <Text className="color-white">+</Text>
             </View>
           ),
+          tabBarLabelStyle: {
+            display: "none",
+          },
         }}
       />
       <Tabs.Screen
