@@ -15,7 +15,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={({ navigation }) => ({
-          title: "首页1",
+          title: "首页",
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="home" size={24} color={color} />
           ),
@@ -46,6 +46,17 @@ export default function TabLayout() {
           title: "消息",
           tabBarIcon: ({ color }) => (
             <MaterialIcons name="message" size={24} color={color} />
+          ),
+          // 单独启用header并添加按钮
+          headerShown: true,
+        })}
+      />
+      <Tabs.Screen
+        name="my"
+        options={({ navigation }) => ({
+          title: "我的",
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="123" size={24} color={color} />
           ),
           // 单独启用header并添加按钮
           headerShown: true,

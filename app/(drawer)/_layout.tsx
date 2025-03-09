@@ -10,7 +10,7 @@ export default function DrawerLayout() {
       }}
     >
       <Drawer.Screen
-        name="(tabs)" // 包含 Tab 导航
+        name="_(tabs)" // 包含 Tab 导航
         options={{
           title: "首页",
         }}
