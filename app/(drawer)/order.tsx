@@ -3,12 +3,12 @@ import React from "react";
 
 type Props = {};
 
-const Setting = (props: Props) => {
+const OrderScreen = (props: Props) => {
   return (
     <View>
-      <Text>Setting</Text>
+      <Text>OrderScreen</Text>
     </View>
   );
 };
 
-export default Setting;
+export default OrderScreen;
