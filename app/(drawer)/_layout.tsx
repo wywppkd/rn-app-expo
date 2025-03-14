@@ -17,7 +17,7 @@ export default function DrawerLayout() {
       />
       <Drawer.Screen
         name="user"
-        options={{ title: "个人中心", headerShown: true }}
+        options={{ title: "个人中心", headerShown: false }}
       />
       <Drawer.Screen
         name="order"

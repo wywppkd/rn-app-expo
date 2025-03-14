@@ -6,7 +6,15 @@ import "../global.css";
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Stack screenOptions={{ headerShown: false }} />
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen
+          name="modal"
+          options={{
+            title: "Modal",
+            presentation: "modal",
+          }}
+        />
+      </Stack>
     </GestureHandlerRootView>
   );
 }
