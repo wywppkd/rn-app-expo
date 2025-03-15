@@ -37,6 +37,14 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "允许 App 访问您的相机",
+          "microphonePermission": "允许 App 访问您的麦克风",
+          "recordAudioAndroid": true
+        }
       ]
     ],
     "experiments": {
