@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { AxiosResponse } from "axios";
-import { Alert } from "react-native";
 import { getBaseURL } from "./getBaseURL";
+import { myShowToast } from "./myShowToast";
 
 // 扩展 axios 的 TS 类型
 declare module "axios" {
@@ -53,7 +53,7 @@ request.interceptors.response.use(
 
     // 统一错误提示
     if (code !== 200 && !skipErrorHandler) {
-      Alert.alert(msg);
+      myShowToast(msg);
     }
 
     return res;
@@ -73,7 +73,7 @@ request.interceptors.response.use(
       codeMessage[status as keyof typeof codeMessage] ||
       error.message ||
       "未知异常";
-    Alert.alert(message);
+    myShowToast(message);
     return Promise.reject(error);
   },
 );
